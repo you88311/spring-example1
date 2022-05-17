@@ -1,11 +1,17 @@
 package springpractice.hellospring.domain;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
 public class Member {
 
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
 
-    //아래는 getter, setter로 자동 생성함
     public Long getId() {
         return id;
     }
