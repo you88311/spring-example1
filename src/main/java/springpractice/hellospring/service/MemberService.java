@@ -6,10 +6,12 @@ import springpractice.hellospring.domain.Member;
 import springpractice.hellospring.repository.MemberRepository;
 import springpractice.hellospring.repository.MemoryMemberRepository;
 
+import javax.transaction.Transactional;
 import java.util.List;
 import java.util.Optional;
 
 //@Service
+@Transactional
 public class MemberService {
 
     private final MemberRepository memberRepository;
