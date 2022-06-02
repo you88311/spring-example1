@@ -9,9 +9,7 @@ import springpractice.hellospring.service.MemberService;
 // 자바 코드로 직접 스프링 빈 등록하는 방법
 @Configuration
 public class SpringConfig {
-
     private final MemberRepository memberRepository;
-
     @Autowired
     public SpringConfig(MemberRepository memberRepository) {
         this.memberRepository = memberRepository;
